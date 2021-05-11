@@ -1,7 +1,7 @@
 /*
  * @Author: wangdachui
  * @Date: 2021-05-11 13:46:45
- * @LastEditTime: 2021-05-11 14:12:33
+ * @LastEditTime: 2021-05-11 22:34:58
  * @LastEditors: wangdachui
  * @Description: 
  * @FilePath: \Public-Koa2-Mysql-Sequelize_Server-master\Middleware\HandlePython.js
@@ -12,7 +12,8 @@ class Py {
     static async sendMail(params) {
         //需要本机环境装python，之后打算集成py虚拟环境
         let pyshell = 'python3.6 ./python/sendMail.py';
-        exec(pyshell, function (error, stdout, stderr) {        
+        exec(pyshell, function (error, stdout, stderr) {      
+           //还没研究好exec怎么用  
             if(error){
                console.log(error)
             }
