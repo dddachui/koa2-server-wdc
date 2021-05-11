@@ -1,17 +1,30 @@
-
+/*
+ * @Author: wangdachui
+ * @Date: 2021-05-10 23:23:02
+ * @LastEditTime: 2021-05-11 09:58:08
+ * @LastEditors: wangdachui
+ * @Description: 
+ * @FilePath: \Public-Koa2-Mysql-Sequelize_Server-master\Middleware\HandleCheck.js
+ */
 class Check {
   /**
-  * @description 测试接口
- */
+   * @Author: wangdachui
+   * @Date: 2021-05-11 09:57:16
+   * @description:  测试函数
+   * @return {number} 1
+   */  
   static async test() {
     console.log("test is ok");
     return 1;
   }
-
+  
   /**
-   * @description 检查请求接口的参数
-   * @param {params} 参数对象
-  */
+   * @Author: wangdachui
+   * @Date: 2021-05-11 09:57:42
+   * @description: 判断接口参数是否完备
+   * @param {object} params
+   * @return {list} errorInfo
+   */
   static async check(params) {
     let errorInfo = [];
     for (let item in params) {

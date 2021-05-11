@@ -30,6 +30,7 @@
     "sequelize-auto": "^0.8.2"
   },
   "devDependencies": {
+    "jsdoc": "^3.6.6",
     "nodemon": "^2.0.7"
   }
 }

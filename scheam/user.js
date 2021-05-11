@@ -1,3 +1,11 @@
+/*
+ * @Author: wangdachui
+ * @Date: 2021-05-10 22:24:16
+ * @LastEditTime: 2021-05-11 10:00:01
+ * @LastEditors: wangdachui
+ * @Description: 
+ * @FilePath: \Public-Koa2-Mysql-Sequelize_Server-master\scheam\user.js
+ */
 /* jshint indent: 2 */
 
 module.exports = function(sequelize, DataTypes) {
@@ -17,10 +25,6 @@ module.exports = function(sequelize, DataTypes) {
     },
     email: {
       type: DataTypes.STRING(100),
-      allowNull: false
-    },
-    age: {
-      type: DataTypes.INTEGER(4),
       allowNull: false
     }
   }, {
